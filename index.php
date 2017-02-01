@@ -16,7 +16,7 @@
 </head>
 <body>
 	<h1>Mon blog</h1>
-	<a href="form.php"><button>Ajouter un article</button></a>
+	<form action="form.php" method="POST"><input type="submit" value="Ajouter un article"></form>
 	<table>
 		<tr>
 			<th>Titre</th>
@@ -31,7 +31,7 @@
 				<td><?= $post->content; ?></td>
 				<td><?= $post->author; ?></td>
 				<td><?= $post->created_at; ?></td>
-				<td><a href="form.php?id=<?= $post->id; ?>"><button>Editer</button></a></td>
+				<td><form action="form.php?id=<?= $post->id; ?>" method="POST"><input type="hidden" name="id" value="<?= $post->id; ?>"><input type="submit" value="Editer"></form></td>
 			</tr>
 		<?php endforeach; ?>
 	</table>
