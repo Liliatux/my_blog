@@ -23,6 +23,7 @@
 			<th>Contenu</th>
 			<th>Auteur</th>
 			<th>Date de création</th>
+			<th>Edition</th>
 		</tr>
 		<?php foreach($posts as $post):  ?>
 			<tr>
@@ -30,6 +31,7 @@
 				<td><?= $post->content; ?></td>
 				<td><?= $post->author; ?></td>
 				<td><?= $post->created_at; ?></td>
+				<td><a href="form.php?id=<?= $post->id; ?>"><button>Editer</button></a></td>
 			</tr>
 		<?php endforeach; ?>
 	</table>
