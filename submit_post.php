@@ -8,6 +8,14 @@
 		include_once 'form.php';
 		echo "Erreur le titre, l'auteur ou le contenu n'est pas rempli";
 	} else{
-		echo "Article envoyé";
+		require_once 'index.php';
+		$posts = ORM::for_table('posts')->create();
+		$posts->title = $title;
+		$posts->content = $content;
+		$posts->author = $author;
+		$posts->created_at = $date;
+		$posts->save();
+		header('Location:index.php');
+		exit;
 	}
 ?>
