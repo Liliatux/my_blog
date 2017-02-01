@@ -16,8 +16,7 @@
 </head>
 <body>
 	<h1>Mon blog</h1>
-
-	Afficher les deux articles l'un en dessous de l'autre avec titre, contenu, nom de l'auteur et date de création
+	<a href="form.php"><button>Ajouter un article</button></a>
 	<table>
 		<tr>
 			<th>Titre</th>
