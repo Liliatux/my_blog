@@ -1,0 +1,12 @@
+{
+    "name": "root/my_blog",
+    "authors": [
+        {
+            "name": "Lilia",
+            "email": "geertszelia@gmail.com"
+        }
+    ],
+    "require": {
+        "j4mie/idiorm": "^1.5"
+    }
+}
